@@ -1,6 +1,5 @@
 package main
 
-import "fmt"
 
 func main() {
 	cards := deck {
@@ -8,6 +7,7 @@ func main() {
 	"two",
 	}
 	/* The following one-liner is equivalent to:
+	// import fmt
 	for i, card := range cards {
 		fmt.Println(i, card)
 	}
