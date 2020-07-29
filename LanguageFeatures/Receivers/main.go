@@ -1,5 +1,7 @@
 package main
 
+// to look through Go packages: https://golang.org/pkg
+// for example -> import ioutil // disk operations
 
 func main() {
 	cards := newDeck()
