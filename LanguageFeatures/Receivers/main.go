@@ -2,10 +2,8 @@ package main
 
 
 func main() {
-	cards := deck {
-	"one",
-	"two",
-	}
+	cards := newDeck()
+	
 	/* The following one-liner is equivalent to:
 	// import fmt
 	for i, card := range cards {
