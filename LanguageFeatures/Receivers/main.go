@@ -16,4 +16,6 @@ func main() {
 	hand, remainingCards := deal(cards, 5)
 	hand.print()
 	remainingCards.print()
+	// convert text to a byte slice
+	convertibleString("Converted text for disk IO").demoConversion()
 }

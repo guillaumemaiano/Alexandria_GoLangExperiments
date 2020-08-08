@@ -38,3 +38,10 @@ func(d deck) print() {
 func deal(d deck, handsize int) (deck, deck) {
 	return d[:handsize], d[handsize:]
 }
+
+// contrary to Swift, you can't add functionality ('protocol'-like) to non-local types
+type convertibleString string
+
+func (s convertibleString) demoConversion() {
+	fmt.Println([]byte(s))
+}
