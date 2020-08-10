@@ -45,3 +45,7 @@ type convertibleString string
 func (s convertibleString) demoConversion() {
 	fmt.Println([]byte(s))
 }
+
+func (d deck) toString() string {
+	return "Not implemented"
+}
