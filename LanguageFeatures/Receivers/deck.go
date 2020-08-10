@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 // create a  new type called deck, using the slices we learned
 
@@ -16,7 +19,7 @@ func newDeck() deck {
 	// mix and match
 	for _, suit := range  cardSuits {
 		for  _, value := range cardValues {
-			cards = append(cards, suit + " of " + value)
+			cards = append(cards, value + " of " + suit)
 		}
 	}
 	return cards
@@ -47,5 +50,5 @@ func (s convertibleString) demoConversion() {
 }
 
 func (d deck) toString() string {
-	return "Not implemented"
+	return strings.Join([]string(d), ",")
 }
